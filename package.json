@@ -1,7 +1,7 @@
 {
   "name": "zenuit-consulting-services",
   "version": "1.0.0",
-  "author": "zenuit-consulting-services",
+  "autor": "Zenuit",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

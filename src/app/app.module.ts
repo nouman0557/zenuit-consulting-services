@@ -11,6 +11,8 @@ import { DevelopmentComponent } from './development/development.component';
 import { SecurityComponent } from './security/security.component';
 import { ServicesComponent } from './services/services.component';
 import { SolutionsComponent } from './solutions/solutions.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SolutionsComponent } from './solutions/solutions.component';
     DevelopmentComponent,
     SecurityComponent,
     ServicesComponent,
-    SolutionsComponent
+    SolutionsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

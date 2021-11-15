@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.primary-btn {
+    width: 150px;
+    height: 43px;
+    border: 2px solid #00a6d6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.primary-btn-fill {
+    width: 271px;
+    height: 51px;
+    background: #00a6d6;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.primary-btn:hover {
+    background-color: #00a6d6;
+    color: #00a6d6;
+}
+
+.primary-btn-fill:hover {
+    background: transparent;
+    border: 2px solid #00a6d6;
+}
+
+.clickable {
+    cursor: pointer;
+}
