@@ -90,3 +90,111 @@
         top: -468px;
     }
 }
+
+///NEW DESIGN
+
+.section-2 {
+    background-image: url("../../assets/images/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 100%;
+    height: 819px;
+    padding: 10px;
+    // height: 100%;
+    position: relative;
+    .section-2-mask-1 {
+        width: 110%;
+        height: 30%;
+        background: #000000;
+        filter: blur(69px);
+        position: absolute;
+        top: -91px;
+        left: -40px;
+    }
+    .section-2-mask-2 {
+        width: 63%;
+        height: 41%;
+        background: #000000;
+        filter: blur(69px);
+        transform: rotate(349deg);
+        position: absolute;
+        left: -44px;
+        top: 75px;
+    }
+}
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 100%;
+    height: 819px;
+    padding: 10px;
+    background-image: url("../../assets/images/bg-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .section-3-mask-1 {
+        width: 110%;
+        height: 30%;
+        background: #000000;
+        filter: blur(69px);
+        position: absolute;
+        top: -124px;
+        left: -85px;
+    }
+    .section-2-mask-2 {
+        width: 63%;
+        height: 41%;
+        background: #000000;
+        filter: blur(69px);
+        transform: rotate(349deg);
+        position: absolute;
+        left: -44px;
+        top: 75px;
+    }
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 100%;
+    height: 529px;
+    // height: 100%;
+    padding: 10px;
+    background-image: url("../../assets/images/bg-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 480px) {
+    .section-2 {
+        height: auto;
+    }
+    .section-3 {
+        height: auto;
+    }
+    .section-4 {
+        height: auto;
+    }
+
+    .heading-text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sub-heading-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .paragraph-text {
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
