@@ -11,7 +11,7 @@ import { SolutionsComponent } from './solutions/solutions.component';
 
 const routes: Routes = [
 
-  { path: 'Home', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
 
   { path: 'consulting', component: ConsultingComponent },
 
@@ -27,9 +27,9 @@ const routes: Routes = [
 
   { path: 'solutions', component: SolutionsComponent },
 
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
-  { path: '**', redirectTo: 'Home' }
+  { path: '**', redirectTo: 'home' }
 
 ];
 
