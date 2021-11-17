@@ -26,6 +26,11 @@ body {
   color: #ffffff;
   margin-bottom: 27px;
 }
+/* for home section-2 */
+.container-top {
+  position: absolute;
+  top: 155px;
+}
 
 .sub-heading-text {
   font-family: Montserrat;
@@ -644,7 +649,9 @@ footer #copyright .nav-inline {
 .mb-40 {
   margin-bottom: 40px;
 }
-
+.mb-10 {
+  margin-bottom: 10px;
+}
 .footer-logo {
   width: auto;
 }
@@ -1136,9 +1143,33 @@ footer .widget-title {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #00a6d6;
+  /* color: #00a6d6; */
 }
 
+.navbar-light .navbar-nav .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00a6d6;
+  display: block;
+  margin: auto;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover:focus {
+  color: #ffffff;
+}
 /* Default Navbar */
 .navbar-nav .nav-link {
   color: #fff;
@@ -1149,13 +1180,9 @@ footer .widget-title {
   font-family: Poppins;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+/* .navbar-light .navbar-nav .nav-link:hover {
   color: #00a6d6;
-}
-
-.navbar-light .navbar-nav .nav-link:hover:focus {
-  color: #00a6d6;
-}
+} */
 
 .navbar-light .navbar-nav > .active > a,
 .navbar-light .navbar-nav > .active > a:focus,
@@ -3366,7 +3393,7 @@ ul.nav-tabs li a {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: #00a6d6;
+  color: #ffffff;
 }
 
 .nav-tabs {
@@ -3473,8 +3500,8 @@ ul.nav-tabs li a {
   }
   .heading-text {
     font-size: 25px;
-    line-height: 30px;
     margin-bottom: 4px;
+    line-height: 30px;
   }
   .sub-heading-text {
     font-size: 18px;
@@ -3483,6 +3510,12 @@ ul.nav-tabs li a {
   .paragraph-text {
     font-size: 12px;
     line-height: 150%;
+  }
+  .container-top {
+    top: 5px;
+  }
+  .mb-60 {
+    display: none;
   }
 
   .fact-title {
@@ -3662,6 +3695,12 @@ ul.nav-tabs li a {
     font-size: 12px;
     line-height: 150%;
   }
+  .container-top {
+    top: 5px;
+  }
+  .mb-60 {
+    display: none;
+  }
   .page-header-title .heading-title {
     font-size: 24px;
   }
@@ -3826,6 +3865,13 @@ ul.nav-tabs li a {
   .paragraph-text {
     font-size: 12px;
     line-height: 150%;
+  }
+
+  .container-top {
+    top: 5px;
+  }
+  .mb-60 {
+    display: none;
   }
   .navbar-brand img {
     max-width: 120px;
