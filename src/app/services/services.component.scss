@@ -1,0 +1,99 @@
+.services-section-1 {
+    background-image: url("../../assets/images/services/bg-1.png");
+    height: 942px;
+    .page-title-section {
+        position: absolute;
+        top: 10%;
+        left: 7%;
+
+        .head-text {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            color: #ffffff;
+        }
+        .page-name {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            color: #ffffff;
+            opacity: 0.6;
+        }
+    }
+}
+
+.services-section-2 {
+    background-image: url("../../assets/images/services/bg-2.png");
+    height: 498px;
+    // height: 100%;
+}
+
+.services-section-3 {
+    background-image: url("../../assets/images/services/bg-3.png");
+    height: 618px;
+    // height: 100%;
+}
+
+.services-section-4 {
+    background-image: url("../../assets/images/services/bg-4.png");
+    height: 498px;
+    // height: 100%;
+}
+
+.services-section-5 {
+    background-image: url("../../assets/images/services/bg-5.png");
+    height: 618px;
+    // height: 100%;
+}
+
+.services-section-6 {
+    background-image: url("../../assets/images/services/bg-6.png");
+    height: 578px;
+    // height: 100%;
+}
+
+@media (min-width: 1460px) {
+    .services-section-1 {
+        height: 1256px;
+    }
+    .services-section-2 {
+        height: 680px;
+    }
+    .services-section-3 {
+        height: 808px;
+    }
+
+    .services-section-4 {
+        height: 620px;
+    }
+    .services-section-5 {
+        height: 663px;
+    }
+    .services-section-6 {
+        height: 823px;
+    }
+    .services-section-1 .page-title-section {
+        left: 21.3%;
+    }
+}
+
+@media (max-width: 771px) {
+    .services-section-1 .page-title-section {
+        left: 4%;
+    }
+    .services-section-1 {
+        padding-top: 50%;
+    }
+}
+@media (max-width: 280px) {
+    .services-section-1 .page-title-section {
+        left: 4%;
+    }
+    .services-section-1 {
+        padding-top: 80%;
+    }
+}

@@ -13,7 +13,7 @@ header {
     height: 100px;
     .lng-and-cont-btn {
         display: flex;
-        margin-top: -15px;
+        margin-top: -5px;
         align-items: center;
         .lng-drop-down {
             margin-right: 20px;
@@ -33,7 +33,7 @@ header {
                 font-size: 24px;
                 position: absolute;
                 margin-left: 6px;
-                margin-top: -2px;
+                margin-top: 1px;
             }
         }
     }
@@ -41,4 +41,13 @@ header {
 .primary-btn {
     width: 150px;
     height: 43px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 18px;
+    font-weight: 400;
+    padding: 18px 0px;
+    font-family: Poppins;
 }
