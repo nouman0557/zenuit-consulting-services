@@ -1,11 +1,4 @@
-/*
-Product: Helium Bootstrap UI Kit
-Author: UIdeck
-Website: https://uideck.com
-More Info: https://uideck.com/products/helium-ui-kit
-*/
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,700|Montserrat:700");
-/* Typography */
 
 body {
   color: #444;
@@ -23,7 +16,35 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+/* //New Style/ */
+.heading-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
 
+.sub-heading-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.paragraph-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.6;
+}
 h1,
 h2,
 h3,
@@ -351,7 +372,9 @@ strong {
 #content {
   padding-bottom: 60px;
 }
-
+.mb-30 {
+  margin-bottom: 30px;
+}
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -3448,6 +3471,20 @@ ul.nav-tabs li a {
     font-size: 36px;
     line-height: 46px;
   }
+  .heading-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+  .sub-heading-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .paragraph-text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
   .fact-title {
     font-size: 14px;
   }
@@ -3612,6 +3649,19 @@ ul.nav-tabs li a {
     font-size: 36px;
     line-height: 46px;
   }
+  .heading-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+  .sub-heading-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .paragraph-text {
+    font-size: 12px;
+    line-height: 150%;
+  }
   .page-header-title .heading-title {
     font-size: 24px;
   }
@@ -3762,6 +3812,20 @@ ul.nav-tabs li a {
   .cta-content h2 {
     font-size: 36px;
     line-height: 46px;
+  }
+
+  .heading-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
+  .sub-heading-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .paragraph-text {
+    font-size: 12px;
+    line-height: 150%;
   }
   .navbar-brand img {
     max-width: 120px;
