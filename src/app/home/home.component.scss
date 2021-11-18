@@ -11,49 +11,11 @@
 .home-section-2 {
     background-image: url("../../assets/images/bg-2.png");
     height: 819px;
-    .section-2-mask-1 {
-        width: 110%;
-        height: 30%;
-        background: #000000;
-        filter: blur(69px);
-        position: absolute;
-        top: -91px;
-        left: -40px;
-    }
-    .section-2-mask-2 {
-        width: 63%;
-        height: 41%;
-        background: #000000;
-        filter: blur(69px);
-        transform: rotate(349deg);
-        position: absolute;
-        left: -44px;
-        top: 75px;
-    }
 }
 
 .home-section-3 {
     height: 819px;
     background-image: url("../../assets/images/bg-3.png");
-    .section-3-mask-1 {
-        width: 110%;
-        height: 30%;
-        background: #000000;
-        filter: blur(69px);
-        position: absolute;
-        top: -124px;
-        left: -85px;
-    }
-    .section-2-mask-2 {
-        width: 63%;
-        height: 41%;
-        background: #000000;
-        filter: blur(69px);
-        transform: rotate(349deg);
-        position: absolute;
-        left: -44px;
-        top: 75px;
-    }
 }
 
 .home-section-4 {
