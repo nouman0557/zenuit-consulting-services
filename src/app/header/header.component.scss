@@ -34,6 +34,7 @@ header {
 
 .disable-hover {
     cursor: pointer;
+    width: 79px;
     // pointer-events: none;
 }
 
@@ -70,15 +71,24 @@ header {
 
     .lng-drop-down-for-mobile {
         display: flex;
+        position: sticky;
+        right: 3%;
+        margin-left: 38px;
     }
 
     .lng-drop-down-disable {
         display: none;
     }
+
     .navbar-light .navbar-nav .nav-link:hover::after {
         width: 0% !important;
     }
+
     .navbar-light .navbar-nav .nav-link.active::after {
         width: 0% !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin: 0px;
     }
 }

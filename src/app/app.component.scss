@@ -1,0 +1,38 @@
+.scroll-top-icon {
+    position: fixed;
+    bottom: 1%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #00a6d6;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    .icon {
+        color: #ffffff;
+        font-size: 35px;
+    }
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+.scroll-top-icon:hover {
+    border: 1px solid #00a6d6;
+    background: black;
+}
+
+@media (max-width: 988px) {
+    .scroll-top-icon {
+        width: 40px;
+        height: 40px;
+        .icon {
+            font-size: 23px;
+        }
+    }
+}

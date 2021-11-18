@@ -21,7 +21,6 @@
 
     .a-text:hover {
         font-size: 16px;
-        // color: transparent;
         -webkit-text-stroke: 1px #00a6d6;
     }
     .input-style {
@@ -54,6 +53,7 @@
 }
 .light-footer-style {
     background: #11000c;
+    position: relative;
     .term-container {
         font-family: Poppins;
         font-style: normal;
