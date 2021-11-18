@@ -60,3 +60,11 @@
     height: 529px;
     background-image: url("../../assets/images/bg-4.png");
 }
+
+@media (max-width: 771px) {
+    .home-section-3 .primary-btn-fill {
+        width: auto;
+        height: 43px;
+        margin-bottom: 25px;
+    }
+}

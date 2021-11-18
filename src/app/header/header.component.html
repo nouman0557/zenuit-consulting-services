@@ -1,7 +1,23 @@
-<header id="header-style-1">
+<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-faded">
         <div class="container">
+
             <a class="navbar-brand clickable"><img src="../assets/images/logo.png" alt=""></a>
+
+            <ul class="lng-drop-down-for-mobile">
+                <li class="nav-item dropdown clickable">
+                    <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="selected-flag" />
+                        En
+                        <i class="fa drop-icon">&#xf107;</i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">Fre</a>
+                        <a class="dropdown-item">Urdu </a>
+                        <a class="dropdown-item">Hindi</a>
+                    </div>
+                </li>
+            </ul>
 
             <button ton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +33,6 @@
 
                     <li class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="consulting">Consulting</a></li>
-                    <!-- <li class="nav-item"><a routerLinkActive="active" class="nav-link" routerLink="cyber-security">Cyber
-                            Security</a></li>
-                    <li class="nav-item"><a routerLinkActive="active" class="nav-link" routerLink="data-protection">Data
-                            Protection</a></li> -->
                     <li class="nav-item"><a routerLinkActive="active" class="nav-link" routerLink="security">Security
                         </a></li>
 
@@ -29,58 +41,30 @@
 
                     <li class="nav-item"><a routerLinkActive="active" class="nav-link" routerLink="solutions">Solutions
                         </a></li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link">
-                            <img class="selected-flag" /> En <i class="fa drop-icon">&#xf107;</i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="contact-btn">
-                            <span class="text">
-                                Contact US
-                            </span>
-                        </span>
-                    </li> -->
-                </ul>
-            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="lng-and-cont-btn">
-                    <div class="lng-drop-down">
-                        <div class="class-test">
-                            <img class="selected-flag" /> En <i class="fa drop-icon">&#xf107;</i>
+                    <li class="nav-item dropdown clickable lng-drop-down-disable">
+                        <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="selected-flag" />
+                            En
+                            <i class="fa drop-icon">&#xf107;</i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">french</a>
+                            <a class="dropdown-item">Urdu </a>
+                            <a class="dropdown-item">Hindi</a>
                         </div>
-                    </div>
-                    <div class="primary-btn">
-                        <span class="text">
+                    </li>
+
+                    <li class="nav-item contact-btn-nav ">
+                        <span class="primary-btn white-text" routerLink="contact-us">
                             Contact US
                         </span>
-                    </div>
-                </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </nav>
+
 </header>
-
-<!-- <header>
-    <div class="wrapper">
-        <div class="header-logo"> </div>
-        <nav>
-            <a routerLinkActive="active" routerLink="Home">Home</a>
-            <a routerLinkActive="active" routerLink="consulting">Consulting</a>
-            <a routerLinkActive="active" routerLink="cyber-security">Cyber Security</a>
-            <a routerLinkActive="active" routerLink="data-protection">Data Protection</a>
-            <a routerLinkActive="active" routerLink="development">Development</a>
-            <a routerLinkActive="active" routerLink="security">Security </a>
-            <a routerLinkActive="active" routerLink="services">services </a>
-            <a routerLinkActive="active" routerLink="Solutions">Solutions </a>
-            <div class="btn-section">
-                <span class="selected-flag"></span>
-                <a class="padding-zero">En </a>
-            </div>
-            <a class="contact-btn">Contact Us</a>
-        </nav>
-
-    </div>
-</header> -->
-<!-- Light header -->

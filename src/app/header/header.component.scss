@@ -1,46 +1,26 @@
 header {
-    height: auto;
-    -moz-background-size: cover;
-    background: url("../../assets/images/header-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    overflow: hidden;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030;
-    height: 100px;
-    .lng-and-cont-btn {
-        display: flex;
-        margin-top: -5px;
-        align-items: center;
-        .lng-drop-down {
-            margin-right: 20px;
-            color: #ffffff;
-            margin-right: 50px;
-            width: 61px;
-            cursor: pointer;
-            .selected-flag {
-                background: url("../../assets/images/flag.png");
-                background-repeat: no-repeat;
-                width: 20px;
-                height: 20px;
-                border-radius: 50px;
-                margin-right: 4px;
-            }
-            .drop-icon {
-                font-size: 24px;
-                position: absolute;
-                margin-left: 6px;
-                margin-top: 1px;
-            }
-        }
-    }
 }
-.primary-btn {
-    width: 150px;
-    height: 43px;
+.selected-flag {
+    background: url("../../assets/images/flag.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 4px;
+}
+.drop-icon {
+    font-size: 24px;
+    position: absolute;
+    margin-left: 6px;
+}
+
+.contact-btn-nav {
+    margin-left: 30px;
+    margin-top: 1%;
 }
 
 .navbar-nav .nav-link {
@@ -50,4 +30,55 @@ header {
     font-weight: 400;
     padding: 18px 0px;
     font-family: Poppins;
+}
+
+.disable-hover {
+    cursor: pointer;
+    // pointer-events: none;
+}
+
+.disable-hover::after {
+    content: none;
+    text-decoration: none;
+}
+
+.lng-drop-down-for-mobile {
+    margin-top: 3%;
+    display: none;
+    li {
+        color: #ffffff;
+    }
+    a {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 988px) {
+    .contact-btn-nav {
+        width: 100%;
+        height: 33px;
+    }
+
+    .bg-faded {
+        background: black;
+    }
+
+    .nav-item .primary-btn {
+        width: 100%;
+        margin-left: -28px;
+    }
+
+    .lng-drop-down-for-mobile {
+        display: flex;
+    }
+
+    .lng-drop-down-disable {
+        display: none;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::after {
+        width: 0% !important;
+    }
+    .navbar-light .navbar-nav .nav-link.active::after {
+        width: 0% !important;
+    }
 }

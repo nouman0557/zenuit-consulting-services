@@ -71,6 +71,7 @@
     justify-content: center;
     width: 100%;
     position: relative;
+    padding: 10px;
 }
 
 .section-2 {
@@ -105,4 +106,10 @@
         font-size: 12px;
         line-height: 150%;
     }
+}
+
+//Color
+
+.white-text {
+    color: #ffffff !important;
 }

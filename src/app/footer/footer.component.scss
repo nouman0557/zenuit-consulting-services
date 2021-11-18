@@ -16,11 +16,12 @@
         line-height: 21px;
         color: #ffffff;
         opacity: 0.6;
+        text-decoration: none;
     }
 
     .a-text:hover {
         font-size: 16px;
-        color: transparent;
+        // color: transparent;
         -webkit-text-stroke: 1px #00a6d6;
     }
     .input-style {
@@ -81,16 +82,3 @@
         color: #ffffff;
     }
 }
-
-// .a-text::after {
-//     content: "";
-//     width: 0%;
-//     height: 2px;
-//     background: #00a6d6;
-//     display: block;
-//     margin: auto;
-// }
-// .a-text:hover::after {
-//     width: 100%;
-//     transition: 0.5s;
-// }
