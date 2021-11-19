@@ -1,5 +1,5 @@
 .home-section-1 {
-    height: 809px;
+    height: 100%;
     .primary-btn-fill {
         width: 271px;
         height: 51px;
@@ -33,9 +33,6 @@
 }
 
 @media (min-width: 1460px) {
-    .home-section-1 {
-        height: 1078px;
-    }
     .home-section-2 {
         height: 1087px;
     }

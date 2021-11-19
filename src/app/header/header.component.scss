@@ -70,10 +70,9 @@ header {
     }
 
     .lng-drop-down-for-mobile {
+        position: fixed;
+        right: 19%;
         display: flex;
-        position: sticky;
-        right: 3%;
-        margin-left: 38px;
     }
 
     .lng-drop-down-disable {
