@@ -9,7 +9,9 @@
 
 .li-items {
     margin-left: 5%;
-    // position: relative;
+    .paragraph-text {
+        opacity: 1;
+    }
     ul {
         margin-left: 3%;
         li {
@@ -26,14 +28,14 @@
         top: 8px;
     }
 
-    b {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 150%;
-        color: #ffffff;
-    }
+    // b {
+    //     font-family: Poppins;
+    //     font-style: normal;
+    //     font-weight: bold;
+    //     font-size: 14px;
+    //     line-height: 150%;
+    //     color: #ffffff;
+    // }
 }
 
 @media (min-width: 1460px) {
@@ -52,8 +54,8 @@
         height: 43px;
         margin-bottom: 25px;
     }
-    .li-items .b {
-        font-size: 12px;
-        line-height: 150%;
-    }
+    // .li-items .b {
+    //     font-size: 12px;
+    //     line-height: 150%;
+    // }
 }
