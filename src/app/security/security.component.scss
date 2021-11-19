@@ -1,0 +1,27 @@
+.security-section-1 {
+    background-image: url("../../assets/images/security/bg-1.png");
+    height: 835px;
+}
+
+.security-section-2 {
+    background-image: url("../../assets/images/security/bg-2.png");
+    height: 1480px;
+}
+
+@media (min-width: 1460px) {
+    // .security-section-1 {
+    //     height: 1256px;
+    // }
+
+    // .security-section-2 {
+    //     height: 680px;
+    // }
+}
+
+@media (max-width: 771px) {
+    .security-section-1 .primary-btn-fill {
+        width: auto;
+        height: 43px;
+        margin-bottom: 25px;
+    }
+}
