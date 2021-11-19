@@ -13,6 +13,9 @@ import { ServicesComponent } from './services/services.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { RouterModule } from '@angular/router';
+import { CommomService } from './data-services/commom.service';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,15 @@ import { FooterComponent } from './footer/footer.component';
     ServicesComponent,
     SolutionsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BreadcrumbComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [CommomService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,41 +1,37 @@
 .services-section-1 {
     background-image: url("../../assets/images/services/bg-1.png");
     height: 942px;
+    padding-top: 95px;
 }
 
 .services-section-2 {
     background-image: url("../../assets/images/services/bg-2.png");
     height: 498px;
-    // height: 100%;
 }
 
 .services-section-3 {
     background-image: url("../../assets/images/services/bg-3.png");
     height: 618px;
-    // height: 100%;
 }
 
 .services-section-4 {
     background-image: url("../../assets/images/services/bg-4.png");
     height: 498px;
-    // height: 100%;
 }
 
 .services-section-5 {
     background-image: url("../../assets/images/services/bg-5.png");
     height: 618px;
-    // height: 100%;
 }
 
 .services-section-6 {
     background-image: url("../../assets/images/services/bg-6.png");
     height: 578px;
-    // height: 100%;
 }
 
 @media (min-width: 1460px) {
     .services-section-1 {
-        height: 1256px;
+        height: 956px;
     }
     .services-section-2 {
         height: 680px;
@@ -53,24 +49,10 @@
     .services-section-6 {
         height: 823px;
     }
-    .services-section-1 .page-title-section {
-        left: 21.3%;
-    }
 }
 
-@media (max-width: 771px) {
-    .services-section-1 .page-title-section {
-        left: 4%;
-    }
+@media (max-width: 770px) {
     .services-section-1 {
-        padding-top: 50%;
-    }
-}
-@media (max-width: 280px) {
-    .services-section-1 .page-title-section {
-        left: 4%;
-    }
-    .services-section-1 {
-        padding-top: 80%;
+        padding-top: 144px;
     }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommomService } from '../data-services/commom.service';
 
 @Component({
   selector: 'app-cyber-security',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CyberSecurityComponent implements OnInit {
 
-  constructor() { }
+  constructor(public commonSerice: CommomService) { }
 
   ngOnInit(): void {
+    this.commonSerice.routeName = 'Cyber Security'
   }
 
 }

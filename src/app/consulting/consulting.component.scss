@@ -1,6 +1,7 @@
 .consulting-section-1 {
     background-image: url("../../assets/images/consulting/bg-1.png");
-    height: 1234px;
+    height: 1128px;
+    padding-top: 95px;
     .primary-btn-fill {
         width: 271px;
         height: 51px;
@@ -28,17 +29,13 @@
         top: 8px;
     }
 }
-
-@media (min-width: 1460px) {
-    .consulting-section-1 {
-        height: 1456px;
-    }
-}
-
 @media (max-width: 771px) {
     .consulting-section-1 .primary-btn-fill {
         width: auto;
         height: 43px;
         margin-bottom: 25px;
+    }
+    .consulting-section-1 {
+        padding-top: 144px;
     }
 }

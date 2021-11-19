@@ -29,7 +29,8 @@
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="home">Home</a>
                     </li>
-                    <li class="nav-item"><a routerLinkActive="active" class="nav-link" routerLink="services">Services
+                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                            routerLink="services">Services
                         </a></li>
 
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
@@ -69,5 +70,9 @@
             </div>
         </div>
     </nav>
+
+    <app-breadcrumb *ngIf="_router.url !== '/home'">
+
+    </app-breadcrumb>
 
 </header>

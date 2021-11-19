@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommomService } from '../data-services/commom.service';
 
 @Component({
   selector: 'app-consulting',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultingComponent implements OnInit {
 
-  constructor() { }
+  constructor(public commonSerice: CommomService) { }
 
   ngOnInit(): void {
+    this.commonSerice.routeName = 'Consulting'
   }
 
 }

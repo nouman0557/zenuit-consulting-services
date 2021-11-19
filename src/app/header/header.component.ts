@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRouteSnapshot, Router, RouterStateSnapshot } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   navBarMobileOpen = false
 
-  constructor() { }
+  constructor(public _router: Router) { }
 
   ngOnInit(): void {
   }
@@ -16,5 +17,7 @@ export class HeaderComponent implements OnInit {
   openNavBarForMobileView() {
     this.navBarMobileOpen = !this.navBarMobileOpen
   }
+
+
 
 }
