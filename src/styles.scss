@@ -3,9 +3,9 @@
 #loading {
     display: none;
 }
-// ::-webkit-scrollbar {
-//     display: none;
-// }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .primary-btn {
     width: 150px;
@@ -75,7 +75,7 @@
 }
 
 .section-2 {
-    background-image: url("./assets/images/bg-2.png");
+    background-image: url("./assets/images/home/bg-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

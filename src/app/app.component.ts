@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,9 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
 
+
+  // @ViewChild('scrollElement')
+  // scrollElement!: ElementRef;
 
   isShow = false;
   topPosToStartShowing = 100;
@@ -33,6 +36,7 @@ export class AppComponent {
   };
 
   gotoTop() {
+    // this.scrollElement.nativeElement.scrollTop = 0;
     window.scroll({
       top: 0,
       left: 0,
