@@ -20,6 +20,10 @@ export class AppComponent {
 
   }
 
+  onActive() {
+    window.scroll(0, 0)
+  }
+
   ngOnDestroy() {
     window.removeEventListener('scroll', this.scroll, true);
   }
