@@ -5,7 +5,7 @@
 //===== Prealoder
 
 $(window).on('load', function (event) {
-  $('.preloader').delay(200).fadeOut(500);
+  $('.preloader').delay(100).fadeOut(500);
 });
 
   // }(jQuery));
