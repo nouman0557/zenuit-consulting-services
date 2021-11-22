@@ -1,4 +1,5 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -40,11 +41,11 @@ export class AppComponent {
   };
 
   gotoTop() {
-    // this.scrollElement.nativeElement.scrollTop = 0;
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
+    $('.scroll-top-icon').on('click', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0,
+      }, 1500);
     });
   }
 }

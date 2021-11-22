@@ -1,8 +1,9 @@
 <app-header> </app-header>
 <router-outlet (activate)="onActive()"></router-outlet>
 <app-footer></app-footer>
-<div class="scroll-top-icon" [ngClass]="{'show-scrollTop': isShow}" (click)="gotoTop()">
+
+<a class="scroll-top-icon" [ngClass]="{'show-scrollTop': isShow}" (click)="gotoTop()">
     <span class="icon">
         <i class="fa fa-angle-up"> </i>
     </span>
-</div>
+</a>

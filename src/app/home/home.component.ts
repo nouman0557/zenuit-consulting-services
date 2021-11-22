@@ -11,11 +11,13 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    $('html, body').animate({
+      scrollTop: 0,
+    }, 1500);
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
     });
   }
 

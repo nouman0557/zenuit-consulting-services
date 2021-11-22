@@ -14,7 +14,9 @@ export class BreadcrumbComponent implements OnInit {
 
   routeName = ''
   ngOnInit(): void {
-
+    $('html, body').animate({
+      scrollTop: 0,
+    }, 1500);
   }
 
 }

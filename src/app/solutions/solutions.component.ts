@@ -11,6 +11,9 @@ export class SolutionsComponent implements OnInit {
   constructor(public commonSerice: CommomService) { }
 
   ngOnInit(): void {
+    $('html, body').animate({
+      scrollTop: 0,
+    }, 1500);
     this.commonSerice.routeName = 'Solutions'
   }
 
