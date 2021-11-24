@@ -32,15 +32,11 @@ header {
     font-family: Poppins;
 }
 
-.disable-hover {
-    cursor: pointer;
-    width: 79px;
-    // pointer-events: none;
+.bottom-line-none {
+    width: 100%;
 }
-
-.disable-hover::after {
-    content: none;
-    text-decoration: none;
+.bottom-line-none:hover::after {
+    width: 0% !important;
 }
 
 .lng-drop-down-for-mobile {

@@ -1,11 +1,7 @@
-// (function ($) {
 
 "use strict";
-
-//===== Prealoder
-
+//=========preloader===
 $(window).on('load', function (event) {
-  $('.preloader').delay(100).fadeOut(500);
+  $('.preloader').delay(500).fadeOut(500);
 });
 
-  // }(jQuery));
