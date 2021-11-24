@@ -27,7 +27,9 @@
 }
 
 .primary-btn-fill {
-    width: 271px;
+    min-width: 271px;
+    max-width: 470px;
+    width: auto;
     height: 51px;
     background: #00a6d6;
     box-sizing: border-box;
@@ -103,6 +105,9 @@
     .paragraph-text {
         font-size: 12px;
         line-height: 150%;
+    }
+    .primary-btn-fill {
+        height: 35px;
     }
 }
 

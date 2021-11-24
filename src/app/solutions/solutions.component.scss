@@ -1,0 +1,27 @@
+.solutions-section-1 {
+    background-image: url("../../assets/images/solutions/sol-bg-1.png");
+    height: 638px;
+    padding-top: 95px;
+}
+
+.solutions-section-2 {
+    background-image: url("../../assets/images/solutions/sol-bg-2.png");
+    height: 790px;
+}
+
+.solutions-section-3 {
+    background-image: url("../../assets/images/solutions/sol-bg-3.png");
+    height: 726px;
+}
+
+@media (max-width: 771px) {
+    .solutions-section-2 .primary-btn-fill .text {
+        font-size: 10px;
+    }
+    .solutions-section-3 .primary-btn-fill .text {
+        font-size: 10px;
+    }
+    .solutions-section-1 {
+        padding-top: 144px;
+    }
+}
