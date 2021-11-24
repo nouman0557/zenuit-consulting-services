@@ -1,0 +1,39 @@
+.cyber-security-section-1 {
+    background-image: url("../../assets/images/cyber-security/cyber-bg-1.png");
+    height: 1483px;
+    padding-top: 95px;
+}
+
+.partners-content {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    // background-color: aqua;
+    .logo-content {
+        // background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // padding: 30px 10px;
+        text-align: center;
+        margin: 5px;
+        flex-basis: 150px;
+        flex-grow: 1;
+        position: relative;
+        p {
+            position: absolute;
+            bottom: 0;
+        }
+        img {
+            max-width: 206.87px;
+            max-height: 74.38px;
+        }
+    }
+}
+
+@media (max-width: 771px) {
+    .cyber-security-section-1 {
+        padding-top: 144px;
+    }
+}
