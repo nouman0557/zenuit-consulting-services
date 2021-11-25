@@ -59,6 +59,8 @@
                     </p>
                 </div>
             </div>
+            <div class="mb-60"></div>
+            <div class="mb-60"></div>
             <div class="row">
                 <div class="col-sm-12 center-content">
                     <span class="center-heading"> Our Partners:</span>
@@ -68,21 +70,12 @@
                 <div class="col-sm-12 partners-content">
                     <div class="logo-content" *ngFor="let partner of partnersData">
                         <img src="{{partner.imageUrl}}" alt="">
-                        <!-- <p class="paragraph-text">
+                        <span class="paragraph-text">
                             <b>{{partner.headingText}}</b> {{partner.subHeadingText}}
-                        </p> -->
+                        </span>
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-sm-12 partners-content">
-                    <div class="logo-content" *ngFor="let partner of partnersData">
-                        <p class="paragraph-text">
-                            <b>{{partner.headingText}}</b> {{partner.subHeadingText}}
-                        </p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </section>
