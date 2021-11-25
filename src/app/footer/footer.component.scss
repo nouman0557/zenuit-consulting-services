@@ -21,7 +21,8 @@
 
     .a-text:hover {
         font-size: 16px;
-        -webkit-text-stroke: 1px #00a6d6;
+        -webkit-text-stroke: 1px #ffffff;
+        opacity: 1;
     }
     .input-style {
         width: 305px;
@@ -81,4 +82,13 @@
         line-height: 130%;
         color: #ffffff;
     }
+}
+
+.stroke-none {
+    font-size: 14px;
+}
+.stroke-none:hover {
+    opacity: 0.6 !important;
+    font-size: 14px !important;
+    -webkit-text-stroke: 0px #ffffff !important;
 }
