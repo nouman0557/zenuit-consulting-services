@@ -322,7 +322,9 @@ strong {
   justify-content: center;
   display: flex;
 }
-
+.padding-for-center {
+  padding: 0% 16% 0% 16%;
+}
 /* .cta-content h2 {
   font-size: 53px;
   line-height: 65px;
