@@ -13,7 +13,10 @@
     background-image: url("../../assets/images/solutions/sol-bg-3.png");
     height: 726px;
 }
-
+.primary-btn-fill {
+    width: 271px;
+    height: 51px;
+}
 @media (max-width: 771px) {
     .solutions-section-2 .primary-btn-fill .text {
         font-size: 10px;
