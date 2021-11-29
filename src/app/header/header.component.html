@@ -1,9 +1,12 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-faded" [ngClass]="{'bg-black-class': navBarMobileOpen}">
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded"
+        [ngClass]="{'bg-black-class': navBarMobileOpen,'nav-height-on-scroll': scrollDown}">
         <div class="container">
 
-            <a class="navbar-brand clickable"><img src="../assets/images/logo.png" alt=""></a>
-
+            <a class="navbar-brand clickable">
+                <img src="../assets/images/logo.png" alt="">
+            </a>
+            <!-- [ngClass]="{'logo-height-on-scroll': scrollDown}" -->
             <ul class="lng-drop-down-for-mobile" [ngClass]="{'display-inherit': navBarMobileOpen}">
                 <li class="nav-item dropdown clickable">
                     <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,10 +72,11 @@
                 </ul>
             </div>
         </div>
+
     </nav>
-
-    <app-breadcrumb *ngIf="_router.url !== '/home'">
-
-    </app-breadcrumb>
+    <!--  -->
+    <div [ngClass]="{'breadcrum-on-scroll': scrollDown}">
+        <app-breadcrumb *ngIf="_router.url !== '/home'"> </app-breadcrumb>
+    </div>
 
 </header>

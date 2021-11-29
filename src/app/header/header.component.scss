@@ -92,3 +92,29 @@ header {
         margin: 0px;
     }
 }
+
+.nav-height-on-scroll {
+    height: 65px;
+    -webkit-transition: all 0.6s ease-out 0.6s;
+    -moz-transition: all 0.6s ease-out 0.6s;
+    -ms-transition: all 0.6s ease-out 0.6s;
+    -o-transition: all 0.6s ease-out 0.6s;
+    transition: all 0.6s ease-out 0.6s;
+}
+.logo-height-on-scroll {
+    width: 70px;
+    height: 76px;
+    -webkit-transition: all 0.6s ease-out 0.6s;
+    -moz-transition: all 0.6s ease-out 0.6s;
+    -ms-transition: all 0.6s ease-out 0.6s;
+    -o-transition: all 0.6s ease-out 0.6s;
+    transition: all 0.6s ease-out 0.6s;
+}
+.breadcrum-on-scroll {
+    display: none;
+    -webkit-transition: all 0.6s ease-out 0.6s;
+    -moz-transition: all 0.6s ease-out 0.6s;
+    -ms-transition: all 0.6s ease-out 0.6s;
+    -o-transition: all 0.6s ease-out 0.6s;
+    transition: all 0.6s ease-out 0.6s;
+}
