@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none !important;
     .text {
         font-family: Poppins;
         font-style: normal;
@@ -27,9 +28,9 @@
 }
 
 .primary-btn-fill {
-    min-width: 271px;
+    // min-width: 271px;
     max-width: 470px;
-    width: auto;
+    width: 271px;
     height: 51px;
     background: #00a6d6;
     box-sizing: border-box;
@@ -38,6 +39,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none !important;
     .text {
         font-family: Poppins;
         font-style: normal;
