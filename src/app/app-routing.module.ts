@@ -11,41 +11,21 @@ import { SolutionsComponent } from './solutions/solutions.component';
 
 const routes: Routes = [
 
-  {
-    path: 'home', component: HomeComponent,
-    children: [
-      { path: '', component: HomeComponent, },
+  { path: 'home', component: HomeComponent },
 
-      { path: 'consulting', component: ConsultingComponent },
+  { path: 'consulting', component: ConsultingComponent },
 
-      { path: 'cyber-security', component: CyberSecurityComponent },
+  { path: 'cyber-security', component: CyberSecurityComponent },
 
-      { path: 'data-protection', component: DataProtectionComponent },
+  { path: 'data-protection', component: DataProtectionComponent },
 
-      { path: 'development', component: DevelopmentComponent },
+  { path: 'development', component: DevelopmentComponent },
 
-      { path: 'security', component: SecurityComponent },
+  { path: 'security', component: SecurityComponent },
 
-      { path: 'services', component: ServicesComponent },
+  { path: 'services', component: ServicesComponent },
 
-      { path: 'solutions', component: SolutionsComponent },
-
-    ]
-  },
-
-  // { path: 'consulting', component: ConsultingComponent },
-
-  // { path: 'cyber-security', component: CyberSecurityComponent },
-
-  // { path: 'data-protection', component: DataProtectionComponent },
-
-  // { path: 'development', component: DevelopmentComponent },
-
-  // { path: 'security', component: SecurityComponent },
-
-  // { path: 'services', component: ServicesComponent },
-
-  // { path: 'solutions', component: SolutionsComponent },
+  { path: 'solutions', component: SolutionsComponent },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 
