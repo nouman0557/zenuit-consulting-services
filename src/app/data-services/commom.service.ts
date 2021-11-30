@@ -6,5 +6,6 @@ import { Injectable } from '@angular/core';
 export class CommomService {
 
   public routeName = ''
+  public navBgImg = true
   constructor() { }
 }

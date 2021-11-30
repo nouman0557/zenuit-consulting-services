@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
 import { CommomService } from './data-services/commom.service';
+import { ResourcesComponent } from './resources/resources.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CommomService } from './data-services/commom.service';
     SolutionsComponent,
     HeaderComponent,
     FooterComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    ResourcesComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

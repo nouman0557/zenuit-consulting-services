@@ -1,0 +1,17 @@
+.resources-section-1 {
+    background-image: url("../../assets/images/header-bg-2.png");
+    height: 275px;
+    padding-top: 95px;
+}
+
+.resources-section-2 {
+    height: 876px;
+    width: auto;
+    background-color: #ffffff;
+}
+
+@media (max-width: 771px) {
+    .resources-section-1 {
+        padding-top: 144px;
+    }
+}
