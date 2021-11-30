@@ -114,3 +114,24 @@
         padding-top: 144px;
     }
 }
+
+@media (max-width: 400px) {
+    .resources-section-2 {
+        .btn-tabs-container {
+            .primary-btn {
+                height: 33px;
+            }
+        }
+        .resources-post-container {
+            padding-left: 13px;
+            .post-box {
+                width: 270px;
+                min-height: 264px;
+                height: auto;
+                margin-right: 0px;
+                margin-bottom: 30px;
+                padding: 15px 15px 9px 14px;
+            }
+        }
+    }
+}
