@@ -11,10 +11,50 @@
             </div>
         </div>
     </div>
-    <div class="common-section resources-section-2">
+    <div class="resources-section-2">
         <div class="container">
-            <div class="row">
+            <div class="btn-tabs-container">
+                <a class="primary-btn btn-active">
+                    <span class="text">
+                        White Papers
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Case Studies
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Industry Analyst Reports
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Data Sheets
+                    </span>
+                </a>
+            </div>
 
+            <div class="resources-post-container">
+                <div class="post-box" *ngFor="let resource of resources">
+                    <div class="box-header">
+                        <img class="res-img" src="{{resource?.imgUrl}}" alt="">
+                        <span class="res-heading">{{ resource?.title}} </span>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            {{ resource?.description}}
+                        </p>
+                    </div>
+                    <div class="box-footer">
+                        <a class="primary-btn">
+                            <span class="text">
+                                Download <i class="fa fa-download icons"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
