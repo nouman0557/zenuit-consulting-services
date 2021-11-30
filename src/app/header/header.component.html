@@ -6,7 +6,8 @@
             <a class="navbar-brand clickable">
                 <img src="../assets/images/logo.png" alt="">
             </a>
-            <ul class="lng-drop-down-for-mobile" [ngClass]="{'display-inherit': navBarMobileOpen}">
+
+            <!-- <ul class="lng-drop-down-for-mobile" [ngClass]="{'display-inherit': navBarMobileOpen}">
                 <li class="nav-item dropdown clickable">
                     <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="selected-flag" />
@@ -19,7 +20,7 @@
                         <a class="dropdown-item">Hindi</a>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
 
             <button class="navbar-toggler" (click)="openNavBarForMobileView()" type="button" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,8 +39,6 @@
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="/consulting">Consulting</a></li>
 
-
-
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="security">Security
                         </a>
@@ -50,16 +49,26 @@
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="solutions">Solutions
                         </a></li>
+
+                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                            routerLink="cyber-Security">Cyber Security
+                        </a>
+                    </li>
+                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                            routerLink="data-protection">Data Protection
+                        </a>
+                    </li> -->
+
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="resources">Resources
                         </a>
                     </li>
-
-                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="blog">Blog
                         </a>
-                    </li> -->
-                    <li (click)="navBarMobileOpen=false" class="nav-item dropdown clickable lng-drop-down-disable">
+                    </li>
+
+                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item dropdown clickable lng-drop-down-disable">
                         <a class="nav-link  bottom-line-none" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <img class="selected-flag" />
@@ -71,7 +80,7 @@
                             <a class="dropdown-item">Urdu </a>
                             <a class="dropdown-item">Hindi</a>
                         </div>
-                    </li>
+                    </li> -->
 
                     <li (click)="navBarMobileOpen=false" class="nav-item contact-btn-nav ">
                         <span class="primary-btn white-text" routerLink="contact-us">
