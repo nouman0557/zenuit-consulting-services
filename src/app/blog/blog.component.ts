@@ -9,7 +9,16 @@ import { CommomService } from '../data-services/commom.service';
 export class BlogComponent implements OnInit {
 
   constructor(public commonSerice: CommomService) { }
+  blogs = [
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' },
+    { blogImgUrl: '../../assets/images/blog/temp-img.png', blogDate: 'Thursday November 11, 2021', blogDescription: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental' }
 
+  ]
   ngOnInit(): void {
     $('html, body').animate({
       scrollTop: 0,

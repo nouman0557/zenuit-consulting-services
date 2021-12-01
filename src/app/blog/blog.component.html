@@ -11,10 +11,55 @@
             </div>
         </div>
     </div>
-    <div class="common-section blog-section-2">
+    <div class="blog-section-2">
         <div class="container">
-            <div class="row">
+            <div class="tag-list">
+                <div class="tag-text bold-text">
+                    All
+                </div>
+                <div class="tag-text">
+                    IT Services/VAR Business
+                </div>
+                <div class="tag-text">
+                    Cyber Security
+                </div>
+                <div class="tag-text">
+                    Data Protection
+                </div>
+                <div class="tag-text">
+                    Emerging Technoligies
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="blog-section-3">
+        <div class="container">
+            <div class="blog-post-container">
+                <div class="post-box" *ngFor="let blog of blogs">
+                    <div class="box-header" [ngStyle]="{'background-image': 'url(' + blog?.blogImgUrl + ')'}">
+                        <div class="date-wrapper">
+                            <div class="date-container">
+                                <img src="../../assets/images/blog/date-icon.png" alt="">
+                                <span class="date-text">
+                                    {{blog?.blogDate}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            {{ blog?.blogDescription}}
+                        </p>
+                    </div>
+                    <div class="box-footer">
+                        <a class="primary-btn">
+                            <span class="text">
+                                Download <i class="fa fa-download icons"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
