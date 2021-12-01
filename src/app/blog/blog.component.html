@@ -36,6 +36,33 @@
 
     <div class="blog-section-3">
         <div class="container">
+            <div class="btn-tabs-container">
+                <a class="primary-btn btn-active">
+                    <span class="text">
+                        All
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        IT Services/VAR Business
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Cyber Security
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Data Protection
+                    </span>
+                </a>
+                <a class="primary-btn ">
+                    <span class="text">
+                        Emerging Technoligies
+                    </span>
+                </a>
+            </div>
             <div class="blog-post-container">
                 <div class="post-box" *ngFor="let blog of blogs">
                     <div class="box-header" [ngStyle]="{'background-image': 'url(' + blog?.blogImgUrl + ')'}">
