@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+
     <div class="blog-section-2">
         <div class="container">
             <div class="tag-list">
@@ -48,16 +49,22 @@
                         </div>
                     </div>
                     <div class="box-body">
+                        <div class="title-heading">
+
+                            {{ blog?.blogTitle}}
+                        </div>
                         <p>
                             {{ blog?.blogDescription}}
                         </p>
                     </div>
                     <div class="box-footer">
-                        <a class="primary-btn">
-                            <span class="text">
-                                Download <i class="fa fa-download icons"></i>
-                            </span>
-                        </a>
+                        <div class="autor-name">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            {{blog?.blogAutorName}}
+                        </div>
+                        <p>
+                            {{blog?.blogAutorDesignation}}
+                        </p>
                     </div>
                 </div>
             </div>
