@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommomService } from '../data-services/commom.service';
+import { CommomService } from '../core/data-services/commom.service';
 
 @Component({
   selector: 'app-header',

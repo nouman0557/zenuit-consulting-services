@@ -7,6 +7,21 @@
                 <img src="../assets/images/logo.png" alt="">
             </a>
 
+            <!-- <ul class="lng-drop-down-for-mobile" [ngClass]="{'display-inherit': navBarMobileOpen}">
+                <li class="nav-item dropdown clickable">
+                    <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="selected-flag" />
+                        En
+                        <i class="fa drop-icon">&#xf107;</i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">French</a>
+                        <a class="dropdown-item">Urdu </a>
+                        <a class="dropdown-item">Hindi</a>
+                    </div>
+                </li>
+            </ul> -->
+
             <button class="navbar-toggler" (click)="openNavBarForMobileView()" type="button" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i *ngIf="!navBarMobileOpen" class="fa fa-bars"></i>
@@ -35,6 +50,15 @@
                             routerLink="solutions">Solutions
                         </a></li>
 
+                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                            routerLink="cyber-Security">Cyber Security
+                        </a>
+                    </li>
+                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
+                            routerLink="data-protection">Data Protection
+                        </a>
+                    </li> -->
+
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
                             routerLink="resources">Resources
                         </a>
@@ -44,6 +68,19 @@
                         </a>
                     </li>
 
+                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item dropdown clickable lng-drop-down-disable">
+                        <a class="nav-link  bottom-line-none" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="selected-flag" />
+                            En
+                            <i class="fa drop-icon">&#xf107;</i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">French</a>
+                            <a class="dropdown-item">Urdu </a>
+                            <a class="dropdown-item">Hindi</a>
+                        </div>
+                    </li> -->
 
                     <li (click)="navBarMobileOpen=false" class="nav-item contact-btn-nav ">
                         <span class="primary-btn white-text" routerLink="contact-us">
@@ -56,6 +93,7 @@
         </div>
 
     </nav>
+    <!--  -->
     <div [ngClass]="{'breadcrum-on-scroll': scrollDown}">
         <app-breadcrumb *ngIf="_router.url !== '/home'"> </app-breadcrumb>
     </div>

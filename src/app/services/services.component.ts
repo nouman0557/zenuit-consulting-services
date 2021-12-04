@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommomService } from '../data-services/commom.service';
+import { CommomService } from '../core/data-services/commom.service';
 
 @Component({
   selector: 'app-services',

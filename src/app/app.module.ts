@@ -15,9 +15,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
-import { CommomService } from './data-services/commom.service';
+import { CommomService } from './core/data-services/commom.service';
 import { ResourcesComponent } from './resources/resources.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogHttpService } from './http/blog-http.service';
+import { ResourcesHttpService } from './http/resources-http.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorInterceptorService } from './core/interceptors/eror-interceptor.service';
+import { BlogService } from './core/data-services/blog.service';
+import { ResourcesService } from './core/data-services/resources.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +45,21 @@ import { BlogComponent } from './blog/blog.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [CommomService],
+  providers: [
+    CommomService,
+    BlogHttpService,
+    ResourcesHttpService,
+    BlogService,
+    ResourcesService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptorService,
+      multi: true
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
