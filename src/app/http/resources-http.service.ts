@@ -15,16 +15,21 @@ export class ResourcesHttpService {
 
 
   getResourcesTags() {
-    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.RESOURCES.RESOURCES_TAGS_URL)
+    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.RESOURCES.RESOURCES_TYPE_URL)
   }
 
   getResourcesList(tagId: any) {
-    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.RESOURCES.RESOURCES_LIST_URL + '/' + tagId)
+    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.RESOURCES.RESOURCES_LIST_URL_1 + tagId + API_ENDPOINTS.RESOURCES.RESOURCES_LIST_URL_2)
   }
 
   // test(requestData: any) {
   //   return this.httpClint.post(environment.baseApiUrl + API_ENDPOINTS.test.test, requestData)
   // }
 
+  // downloadFile(name: any) {
+  //   return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.RESOURCES.FILE_DOWNLOAD_URL + name, {
+  //     responseType: 'arraybuffer',
+  //   })
+  // }
 
 }

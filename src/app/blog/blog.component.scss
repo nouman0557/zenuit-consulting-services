@@ -37,6 +37,7 @@
     height: 876px;
     width: auto;
     background-color: #ffffff;
+    position: relative;
     .btn-tabs-container {
         display: none;
     }
@@ -68,6 +69,7 @@
                 margin-bottom: 10px;
                 position: relative;
                 border-radius: 5px 5px 0px 0px;
+                background-image: url("../../assets/images/no-image-available.jpg");
                 .date-wrapper {
                     position: absolute;
                     top: 0;

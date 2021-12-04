@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommomService } from '../core/data-services/commom.service';
+import { CommonService } from '../core/data-services/commom.service';
 
 @Component({
   selector: 'app-security',
@@ -8,7 +8,7 @@ import { CommomService } from '../core/data-services/commom.service';
 })
 export class SecurityComponent implements OnInit {
 
-  constructor(public commonSerice: CommomService) { }
+  constructor(public commonSerice: CommonService) { }
 
   ngOnInit(): void {
     $('html, body').animate({

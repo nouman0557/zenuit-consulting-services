@@ -14,12 +14,12 @@ export class BlogHttpService {
   ) { }
 
 
-  getBlogTags() {
-    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.BLOG.BLOG_TAGS_URL)
+  getBlogtype() {
+    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.BLOG.BLOG_TYPE_URL)
   }
 
-  getBlogsList(tagId: any) {
-    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.BLOG.BLOG_LIST_URL + '/' + tagId)
+  getBlogsList(blogId: any) {
+    return this.httpClint.get(environment.baseApiUrl + API_ENDPOINTS.BLOG.BLOG_LIST_URL_1 + blogId + API_ENDPOINTS.BLOG.BLOG_LIST_URL_2)
   }
 
 }

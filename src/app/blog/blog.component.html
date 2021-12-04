@@ -15,86 +15,82 @@
     <div class="blog-section-2">
         <div class="container">
             <div class="tag-list">
-                <div class="tag-text bold-text">
-                    All
-                </div>
-                <div class="tag-text">
-                    IT Services/VAR Business
-                </div>
-                <div class="tag-text">
-                    Cyber Security
-                </div>
-                <div class="tag-text">
-                    Data Protection
-                </div>
-                <div class="tag-text">
-                    Emerging Technoligies
+                <div class="tag-text " *ngFor="let type of blogType" [ngClass]="{'bold-text': selectedType.id==type.id}"
+                    (click)="selectType(type)">
+                    {{type?.description}}
                 </div>
             </div>
         </div>
     </div>
 
     <div class="blog-section-3">
+
+        <div *ngIf="showLodaer" class="spinner-div">
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="btn-tabs-container">
-                <a class="primary-btn btn-active">
+                <a class="primary-btn " *ngFor="let type of blogType"
+                    [ngClass]="{'btn-active': selectedType.id==type.id}" (click)="selectType(type)">
                     <span class="text">
-                        All
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        IT Services/VAR Business
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Cyber Security
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Data Protection
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Emerging Technoligies
+                        {{type?.description}}
                     </span>
                 </a>
             </div>
             <div class="blog-post-container">
-                <div class="post-box" *ngFor="let blog of blogs">
-                    <div class="box-header" [ngStyle]="{'background-image': 'url(' + blog?.blogImgUrl + ')'}">
+                <div class="post-box" *ngFor="let blog of blogList">
+                    <div class="box-header"
+                        [ngStyle]="{'background-image': 'url(' + 'data:' + blog?.blogImage?.contentType + ';base64,' + blog.blogImage?.fileContents + ')'}">
                         <div class="date-wrapper">
                             <div class="date-container">
                                 <img src="../../assets/images/blog/date-icon.png" alt="">
                                 <span class="date-text">
-                                    {{blog?.blogDate}}
+                                    {{blog?.created_at |date:'dd MMM yyyy'}}
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="box-body">
                         <div class="title-heading">
-
-                            {{ blog?.blogTitle}}
+                            {{ blog?.title}}
                         </div>
                         <p>
-                            {{ blog?.blogDescription}}
+                            {{ blog?.description}}
                         </p>
                     </div>
+
                     <div class="box-footer">
                         <div class="autor-name">
                             <i class="fa fa-user" aria-hidden="true"></i>
-                            {{blog?.blogAutorName}}
+                            {{blog?.userName}}
                         </div>
                         <p>
-                            {{blog?.blogAutorDesignation}}
+                            {{blog?.userDesignation}}
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- <img *ngIf="!commonSerice.isObjectEmpty(blog?.blogImage)" class="res-img"
+src="data:{{blog?.blogImage?.contentType|| 'image/jpeg;' }};base64,{{blog?.blogImage?.fileContents}}"
+alt="blog?.blogImage?.fileDownloadName">
+
+<img *ngIf="commonSerice.isObjectEmpty(blog?.blogImage)" class="res-img"
+src="{{tempImage}}" alt="This is temp image"> -->

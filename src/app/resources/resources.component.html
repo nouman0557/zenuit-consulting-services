@@ -11,36 +11,50 @@
             </div>
         </div>
     </div>
+
     <div class="resources-section-2">
+
+        <div *ngIf="showLodaer" class="spinner-div">
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="btn-tabs-container">
-                <a class="primary-btn btn-active">
+                <a class="primary-btn" *ngFor="let type of resourcesType"
+                    [ngClass]="{'btn-active': selectedType.id==type.id}" (click)="selectType(type)">
                     <span class="text">
-                        White Papers
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Case Studies
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Industry Analyst Reports
-                    </span>
-                </a>
-                <a class="primary-btn ">
-                    <span class="text">
-                        Data Sheets
+                        {{type?.description}}
                     </span>
                 </a>
             </div>
 
             <div class="resources-post-container">
-                <div class="post-box" *ngFor="let resource of resources">
+
+                <div class="post-box" *ngFor="let resource of resourcesList">
                     <div class="box-header">
-                        <img class="res-img" src="{{resource?.imgUrl}}" alt="">
+
+                        <img *ngIf="!commonSerice.isObjectEmpty(resource?.resourceImage)" class="res-img"
+                            src="data:{{resource?.resourceImage?.contentType|| 'image/jpeg;' }};base64,{{resource?.resourceImage?.fileContents}}"
+                            alt="resource?.resourceImage?.fileDownloadName">
+
+                        <img *ngIf="commonSerice.isObjectEmpty(resource?.resourceImage)" class="res-img"
+                            src="{{tempImage}}" alt="This is temp image">
+
                         <span class="res-heading">{{ resource?.title}} </span>
+
                     </div>
                     <div class="box-body">
                         <p>
@@ -48,7 +62,7 @@
                         </p>
                     </div>
                     <div class="box-footer">
-                        <a class="primary-btn">
+                        <a class="primary-btn" (click)="downloadFile(resource?.fileDownloadLink)">
                             <span class="text">
                                 Download <i class="fa fa-download icons"></i>
                             </span>

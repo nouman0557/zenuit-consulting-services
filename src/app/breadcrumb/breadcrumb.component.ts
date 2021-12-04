@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommomService } from '../core/data-services/commom.service';
+import { CommonService } from '../core/data-services/commom.service';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -9,7 +9,7 @@ import { CommomService } from '../core/data-services/commom.service';
 export class BreadcrumbComponent implements OnInit {
 
   constructor(
-    public commonSerice: CommomService
+    public commonSerice: CommonService
   ) { }
 
   routeName = ''

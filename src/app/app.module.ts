@@ -15,7 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
-import { CommomService } from './core/data-services/commom.service';
+import { CommonService } from './core/data-services/commom.service';
 import { ResourcesComponent } from './resources/resources.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogHttpService } from './http/blog-http.service';
@@ -49,7 +49,7 @@ import { ResourcesService } from './core/data-services/resources.service';
     HttpClientModule
   ],
   providers: [
-    CommomService,
+    CommonService,
     BlogHttpService,
     ResourcesHttpService,
     BlogService,

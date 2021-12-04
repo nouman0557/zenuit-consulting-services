@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { CommomService } from '../core/data-services/commom.service';
+import { CommonService } from '../core/data-services/commom.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +10,7 @@ import { CommomService } from '../core/data-services/commom.service';
 export class HeaderComponent implements OnInit {
   navBarMobileOpen = false
 
-  constructor(public _router: Router, public commonSerice: CommomService) { }
+  constructor(public _router: Router, public commonSerice: CommonService) { }
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true); //third parameter

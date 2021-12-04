@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseApiUrl: 'https://abc.com/',
+  baseApiUrl: 'https://localhost:7164/',
   downloadImageApiUrl: 'https://abc.com/v1/bug/file/',
 };
 

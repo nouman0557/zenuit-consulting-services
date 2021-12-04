@@ -2,10 +2,16 @@
     width: 192px;
     height: 192px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
 }
 .loader div {
-    background: #225db0;
+    background: #00a6d6;
     width: 10px;
     height: 10px;
     transform-origin: 50% 100%;
