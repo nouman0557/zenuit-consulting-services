@@ -184,20 +184,16 @@
                 height: 33px;
                 margin: 5px 5px 5px 5px;
                 padding: 0px 20px 0px 20px;
-                .text {
-                    color: #00a6d6;
-                }
+                color: #00a6d6;
             }
+
             .btn-active {
                 background: #00a6d6;
-                .text {
-                    color: #ffffff;
-                }
+                color: #ffffff;
             }
+
             .primary-btn:hover {
-                .text {
-                    color: #ffffff;
-                }
+                color: #ffffff;
             }
         }
     }

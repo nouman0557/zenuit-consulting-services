@@ -6,7 +6,7 @@
 }
 
 .primary-btn {
-    width: 150px;
+    min-width: 150px;
     height: 43px;
     border: 2px solid #00a6d6;
     box-sizing: border-box;
@@ -16,19 +16,25 @@
     justify-content: center;
     cursor: pointer;
     text-decoration: none !important;
-    .text {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        text-align: center;
-        color: #ffffff;
-    }
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    // .text {
+    //     font-family: Poppins;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     font-size: 14px;
+    //     line-height: 21px;
+    //     text-align: center;
+    //     color: #ffffff;
+    // }
 }
 
 .primary-btn-fill {
-    // min-width: 271px;
     max-width: 470px;
     width: 271px;
     height: 51px;
@@ -40,15 +46,22 @@
     justify-content: center;
     cursor: pointer;
     text-decoration: none !important;
-    .text {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
-        text-align: center;
-        color: #ffffff;
-    }
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    // .text {
+    //     font-family: Poppins;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     font-size: 14px;
+    //     line-height: 21px;
+    //     text-align: center;
+    //     color: #ffffff;
+    // }
 }
 
 .primary-btn:hover {
@@ -59,6 +72,7 @@
 .primary-btn-fill:hover {
     background: transparent;
     border: 2px solid #00a6d6;
+    color: #ffffff;
 }
 
 .clickable {
@@ -126,6 +140,11 @@
     .primary-btn-fill {
         height: 35px;
     }
+
+    .primary-btn {
+        height: 35px;
+    }
+
     .center-heading {
         font-weight: bold;
         font-size: 25px;
@@ -137,8 +156,8 @@
     color: #ffffff !important;
 }
 
-.spinner-div{
-    background-color: rgb(255, 255, 255,0.36);
+.spinner-div {
+    background-color: rgb(255, 255, 255, 0.36);
     position: absolute;
     top: 0;
     left: 0;

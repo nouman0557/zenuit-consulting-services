@@ -3,10 +3,20 @@
         <div class="container animated fadeInDown">
             <div class="mb-60"></div>
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-6">
                     <h2 class="heading-text">
                         Zenuit Blog
                     </h2>
+                </div>
+                <div class="col-sm-3">
+                    <a class="primary-btn white-text">
+                        Follow un on Twitter
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a class="primary-btn white-text">
+                        Follow us on LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
@@ -46,9 +56,7 @@
             <div class="btn-tabs-container">
                 <a class="primary-btn " *ngFor="let type of blogType"
                     [ngClass]="{'btn-active': selectedType.id==type.id}" (click)="selectType(type)">
-                    <span class="text">
-                        {{type?.description}}
-                    </span>
+                    {{type?.description}}
                 </a>
             </div>
             <div class="blog-post-container">
@@ -88,9 +96,3 @@
         </div>
     </div>
 </section>
-<!-- <img *ngIf="!commonSerice.isObjectEmpty(blog?.blogImage)" class="res-img"
-src="data:{{blog?.blogImage?.contentType|| 'image/jpeg;' }};base64,{{blog?.blogImage?.fileContents}}"
-alt="blog?.blogImage?.fileDownloadName">
-
-<img *ngIf="commonSerice.isObjectEmpty(blog?.blogImage)" class="res-img"
-src="{{tempImage}}" alt="This is temp image"> -->
