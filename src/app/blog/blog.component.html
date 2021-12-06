@@ -10,11 +10,13 @@
                 </div>
                 <div class="col-sm-3">
                     <a class="primary-btn white-text">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;
                         Follow un on Twitter
                     </a>
                 </div>
                 <div class="col-sm-3">
                     <a class="primary-btn white-text">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;
                         Follow us on LinkedIn
                     </a>
                 </div>
@@ -34,7 +36,6 @@
     </div>
 
     <div class="blog-section-3">
-
         <div *ngIf="showLodaer" class="spinner-div">
             <div class="loader">
                 <div></div>
@@ -51,7 +52,6 @@
                 <div></div>
             </div>
         </div>
-
         <div class="container">
             <div class="btn-tabs-container">
                 <a class="primary-btn " *ngFor="let type of blogType"
@@ -61,6 +61,7 @@
             </div>
             <div class="blog-post-container">
                 <div class="post-box" *ngFor="let blog of blogList">
+
                     <div class="box-header"
                         [ngStyle]="{'background-image': 'url(' + 'data:' + blog?.blogImage?.contentType + ';base64,' + blog.blogImage?.fileContents + ')'}">
                         <div class="date-wrapper">
@@ -72,12 +73,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="box-body">
                         <div class="title-heading">
-                            {{ blog?.title}}
+                            {{blog?.title}}
                         </div>
                         <p>
-                            {{ blog?.description}}
+                            {{blog?.description}}
                         </p>
                     </div>
 

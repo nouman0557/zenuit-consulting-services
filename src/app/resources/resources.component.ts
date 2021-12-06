@@ -21,7 +21,22 @@ export class ResourcesComponent implements OnInit {
   resourcesList: any
   selectedType: any
   tempImage = '../../assets/images/no-image-available.jpg'
+  tempTypes = [
+    { id: 1, description: 'White Papers' },
+    { id: 2, description: 'Case Studies' },
+    { id: 3, description: 'Industry Analyst Reports' },
+    { id: 4, description: 'Data Sheets' }
+  ]
+  tempResources = [
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' },
+    { resourceImage: null, title: 'Lorem ipsum dolor sit amet, consectetur ', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental to organizations, alongside their customers, leads' }
 
+  ]
   ngOnInit(): void {
     $('html, body').animate({ scrollTop: 0, }, 100);
     this.commonSerice.routeName = 'Resources'
@@ -42,6 +57,9 @@ export class ResourcesComponent implements OnInit {
       }
 
     }).catch((err: any) => {
+      this.resourcesType = this.tempTypes
+      this.resourcesList = this.tempResources
+      this.selectedType = this.tempTypes[0]
       this.showLodaer = false
       console.log('This is error from RES Tag Promise-->', err);
     });
@@ -56,7 +74,6 @@ export class ResourcesComponent implements OnInit {
 
   getResourcesList() {
     this.showLodaer = true
-    this.resourcesList = []
     this.resourcesService.getResourcesList(this.selectedType.id).then((list: any) => {
       this.showLodaer = false
       console.log('Resources List API res-->', list)

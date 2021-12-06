@@ -19,6 +19,24 @@ export class BlogComponent implements OnInit {
   selectedType: any
   tempImage = '../../assets/images/no-image-available.jpg'
 
+  tempTypes = [
+    { id: 1, description: 'All' },
+    { id: 2, description: 'IT Services/VAR Business' },
+    { id: 3, description: 'Cyber Security' },
+    { id: 4, description: 'Data Protection' },
+    { id: 5, description: 'Emerging Technoligies' }
+  ]
+
+  tempBlogData = [
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' },
+    { blogImage: null, created_at: new Date(), title: 'Lorem ipsum dolor sit amet, consectetur', description: 'Cyber attacks are so commonplace that they have become a part of the business world. The result is detrimental', userName: 'Mariana Pereira', userDesignation: 'Director of Email Security Products' }
+  ]
+
   ngOnInit(): void {
     $('html, body').animate({ scrollTop: 0, }, 100);
     $('nav').removeClass('bg-faded');
@@ -39,6 +57,9 @@ export class BlogComponent implements OnInit {
         this.getBlogList()
       }
     }).catch((err: any) => {
+      this.blogType = this.tempTypes
+      this.blogList = this.tempBlogData
+      this.selectedType = this.tempTypes[0]
       this.showLodaer = false
       console.log('This is error from RES Tag Promise-->', err);
     });
@@ -52,7 +73,6 @@ export class BlogComponent implements OnInit {
 
   getBlogList() {
     this.showLodaer = true
-    this.blogList = []
     this.blogService.getBlogList(this.selectedType.id).then((list: any) => {
       this.showLodaer = false
       console.log('blog List API res-->', list)
@@ -60,6 +80,7 @@ export class BlogComponent implements OnInit {
         this.blogList = list
       }
     }).catch((err: any) => {
+      this.blogList = this.tempBlogData
       this.showLodaer = false
       console.log('This is error from res List Promise-->', err);
     });
