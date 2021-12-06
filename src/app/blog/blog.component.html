@@ -21,6 +21,34 @@
                     </a>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-sm-4 top-blog-img"> </div>
+                <div class="col-sm-8">
+                    <h2 class="sub-heading-text">
+                        Hacking season: Why Cyber Monday presents a cyber security nightmare
+                    </h2>
+
+                    <div class="autor-detail">
+                        <p class="paragraph-text"> <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Mariana Pereira,
+                            Director of
+                            Email Security
+                            Products </p>
+                        <p class="paragraph-text"> <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Thursday
+                            November
+                            11, 2021</p>
+                    </div>
+
+                    <p>
+                        Cyber attacks are so commonplace that they have become a part of the business world. The result
+                        is detrimental to organizations, alongside their customers, leads, employees, partners, and
+                        their profitability. So, most businesses know they need proficient protection against
+                        cybercriminals, yet struggle to reconcile their investments with the small rise in the security
+                        they often find that comes along with it. What’s more, wasted money pales in comparison to the
+                        damage to the reputation,
+                    </p>
+                </div>
+            </div>
+            <div class="mb-60"></div>
         </div>
     </div>
 
@@ -60,8 +88,8 @@
                 </a>
             </div>
             <div class="blog-post-container">
+                <!-- <ng-container *ngIf="!showLodaer; else elseTemplate"> -->
                 <div class="post-box" *ngFor="let blog of blogList">
-
                     <div class="box-header"
                         [ngStyle]="{'background-image': 'url(' + 'data:' + blog?.blogImage?.contentType + ';base64,' + blog.blogImage?.fileContents + ')'}">
                         <div class="date-wrapper">
@@ -94,6 +122,13 @@
                     </div>
 
                 </div>
+                <!-- 
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <div class="post-box post-box--skeleton" *ngFor="let item of [ 1, 2, 3, 4,5,6 ]; let i = index">
+                    </div>
+                </ng-template> -->
+
             </div>
         </div>
     </div>
