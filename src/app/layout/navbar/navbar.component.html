@@ -1,0 +1,51 @@
+<header [ngClass]="{'header-onScroll': scrollDown}">
+    <div class="container">
+
+        <a class="navbar-logo" routerLink="home">
+            <img src="../assets/images/logo.png" [ngClass]="{'logo-height-on-scroll': scrollDown}" alt="">
+        </a>
+
+        <div class="navbar-menu-container">
+
+            <a class="hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
+                routerLink="home">Home</a>
+
+            <a class="hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
+                routerLink="consulting">Consulting</a>
+
+            <div class="nav-dropdown">
+                <a class="dropdown-toggle hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
+                    routerLink="services">Services
+                </a>
+                <div class="nav-dropdown-content">
+                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="security">Security
+                    </a>
+                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="development">Development
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a class="dropdown-toggle hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
+                    routerLink="solutions">Solutions
+                </a>
+                <div class="nav-dropdown-content">
+                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="data-protection"> ZCS
+                        Argon
+                    </a>
+                    <a (click)="navBarMobileOpen=false" routerLinkActive="active"
+                        routerLink="cyber-security">Cybersecurity
+                    </a>
+                </div>
+            </div>
+
+            <a (click)="navBarMobileOpen=false" routerLink="contact-us" class="contact-btn">
+                Contact Us
+            </a>
+        </div>
+
+    </div>
+    <div class="nav-breadcrumb" [ngClass]="{'breadcrum-on-scroll': scrollDown}">
+        <app-breadcrumb *ngIf="_router.url !== '/home'"> </app-breadcrumb>
+    </div>
+</header>
