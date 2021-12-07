@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { BlogHttpService } from '../../http/blog-http.service';
-import { CommonService } from './commom.service';
+import { BlogHttpService } from '../http/blog-http.service';
+import { CommonService } from './common.service';
 
 @Injectable({
   providedIn: 'root'

@@ -1,0 +1,58 @@
+.services-section-1 {
+    background-image: url("../../../assets/images/services/ser-bg-1.png");
+    height: 942px;
+    padding-top: 95px;
+}
+
+.services-section-2 {
+    background-image: url("../../../assets/images/services/ser-bg-2.png");
+    height: 498px;
+}
+
+.services-section-3 {
+    background-image: url("../../../assets/images/services/ser-bg-3.png");
+    height: 618px;
+}
+
+.services-section-4 {
+    background-image: url("../../../assets/images/services/ser-bg-4.png");
+    height: 498px;
+}
+
+.services-section-5 {
+    background-image: url("../../../assets/images/services/ser-bg-5.png");
+    height: 618px;
+}
+
+.services-section-6 {
+    background-image: url("../../../assets/images/services/ser-bg-6.png");
+    height: 578px;
+}
+
+@media (min-width: 1460px) {
+    .services-section-1 {
+        height: 1100px;
+    }
+    .services-section-2 {
+        height: 680px;
+    }
+    .services-section-3 {
+        height: 808px;
+    }
+
+    .services-section-4 {
+        height: 663px;
+    }
+    .services-section-5 {
+        height: 819px;
+    }
+    .services-section-6 {
+        height: 823px;
+    }
+}
+
+@media (max-width: 770px) {
+    .services-section-1 {
+        padding-top: 144px;
+    }
+}

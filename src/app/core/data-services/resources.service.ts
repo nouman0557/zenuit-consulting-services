@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { ResourcesHttpService } from 'src/app/http/resources-http.service';
-import { CommonService } from './commom.service';
+import { ResourcesHttpService } from 'src/app/core/http/resources-http.service';
+import { CommonService } from './common.service';
 
 @Injectable({
   providedIn: 'root'

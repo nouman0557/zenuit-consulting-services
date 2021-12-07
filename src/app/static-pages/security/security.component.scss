@@ -1,0 +1,30 @@
+.security-section-1 {
+    background-image: url("../../../assets/images/security/sec-bg-1.png");
+    height: 766px;
+    padding-top: 95px;
+}
+
+.security-section-2 {
+    background-image: url("../../../assets/images/security/sec-bg-2.png");
+    height: 1480px;
+}
+
+@media (max-width: 771px) {
+    .security-section-1 .primary-btn-fill {
+        width: auto;
+        height: 43px;
+        margin-bottom: 25px;
+    }
+    .security-section-1 {
+        padding-top: 144px;
+    }
+}
+
+@media (min-width: 1460px) {
+    .security-section-1 {
+        height: 938px;
+    }
+    .security-section-2 {
+        height: 1586px;
+    }
+}

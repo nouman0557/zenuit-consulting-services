@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlogComponent } from './blog/blog.component';
-import { ConsultingComponent } from './consulting/consulting.component';
-import { CyberSecurityComponent } from './cyber-security/cyber-security.component';
-import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { DevelopmentComponent } from './development/development.component';
+import { BlogComponent } from './dynamic-pages/blog/blog.component';
+import { ResourcesComponent } from './dynamic-pages/resources/resources.component';
 import { HomeComponent } from './home/home.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { SecurityComponent } from './security/security.component';
-import { ServicesComponent } from './services/services.component';
-import { SolutionsComponent } from './solutions/solutions.component';
+import { ConsultingComponent } from './static-pages/consulting/consulting.component';
+import { CyberSecurityComponent } from './static-pages/cyber-security/cyber-security.component';
+import { DataProtectionComponent } from './static-pages/data-protection/data-protection.component';
+import { DevelopmentComponent } from './static-pages/development/development.component';
+import { SecurityComponent } from './static-pages/security/security.component';
+import { ServicesComponent } from './static-pages/services/services.component';
+import { SolutionsComponent } from './static-pages/solutions/solutions.component';
 
 const routes: Routes = [
 

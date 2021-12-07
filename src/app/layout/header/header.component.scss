@@ -1,0 +1,129 @@
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.selected-flag {
+    background: url("../../../assets/images/flag.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 4px;
+}
+.drop-icon {
+    font-size: 24px;
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -2px;
+}
+
+.contact-btn-nav {
+    margin-left: 30px;
+    margin-top: 1%;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 18px;
+    font-weight: 400;
+    padding: 18px 0px;
+    font-family: Poppins;
+}
+
+.bottom-line-none {
+    width: 100%;
+}
+.bottom-line-none:hover::after {
+    width: 0% !important;
+}
+
+.lng-drop-down-for-mobile {
+    margin-top: 3%;
+    display: none;
+    li {
+        color: #ffffff;
+    }
+    a {
+        color: #ffffff;
+    }
+}
+
+.display-inherit {
+    position: inherit !important;
+}
+
+@media (max-width: 988px) {
+    .contact-btn-nav {
+        width: 100%;
+        height: 33px;
+    }
+
+    .bg-black-class {
+        background: black;
+    }
+
+    .nav-item .primary-btn {
+        width: 100%;
+        margin-left: -33px;
+    }
+
+    .lng-drop-down-for-mobile {
+        position: absolute;
+        right: 19%;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .lng-drop-down-disable {
+        display: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::after {
+        width: 0% !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active::after {
+        width: 0% !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin: 0px;
+    }
+}
+
+.nav-height-on-scroll {
+    height: 65px;
+    // background-image: url("../../assets/images/header-bg.png");
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.logo-height-on-scroll {
+    width: 70px;
+    height: 76px;
+    -webkit-transition: all 0.6s ease-out 0.6s;
+    -moz-transition: all 0.6s ease-out 0.6s;
+    -ms-transition: all 0.6s ease-out 0.6s;
+    -o-transition: all 0.6s ease-out 0.6s;
+    transition: all 0.6s ease-out 0.6s;
+}
+
+.breadcrum-on-scroll {
+    display: none;
+    -webkit-transition: all 0.6s ease-out 0.6s;
+    -moz-transition: all 0.6s ease-out 0.6s;
+    -ms-transition: all 0.6s ease-out 0.6s;
+    -o-transition: all 0.6s ease-out 0.6s;
+    transition: all 0.6s ease-out 0.6s;
+}
+
+@media (max-width: 771px) {
+    .nav-height-on-scroll {
+        height: auto;
+        background-color: black;
+    }
+}
