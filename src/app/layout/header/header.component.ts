@@ -14,8 +14,18 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true); //third parameter
-
   }
+
+  pagesDetails = [
+    { name: 'Home', routerLink: 'home', class: '' },
+    { name: 'Consulting', routerLink: 'consulting', class: '' },
+    { name: 'Services', routerLink: 'services', class: '' },
+    { name: 'Security', routerLink: 'security', class: '' },
+    { name: 'Development', routerLink: 'development', class: '' },
+    { name: 'Solutions', routerLink: 'solutions', class: '' },
+    { name: 'ZCS Argon', routerLink: 'data-protection', class: '' },
+    { name: 'Cybersecurity', routerLink: 'cyber-security', class: '' },
+  ]
 
   openNavBarForMobileView() {
     this.navBarMobileOpen = !this.navBarMobileOpen
@@ -43,5 +53,4 @@ export class HeaderComponent implements OnInit {
       this.scrollDown = false;
     }
   };
-
 }

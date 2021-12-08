@@ -24,7 +24,6 @@ import { DataProtectionComponent } from './static-pages/data-protection/data-pro
 import { DevelopmentComponent } from './static-pages/development/development.component';
 import { SecurityComponent } from './static-pages/security/security.component';
 import { ServicesComponent } from './static-pages/services/services.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +40,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     FooterComponent,
     BreadcrumbComponent,
     ResourcesComponent,
-    BlogComponent,
-    NavbarComponent
+    BlogComponent
   ],
   imports: [
     BrowserModule,

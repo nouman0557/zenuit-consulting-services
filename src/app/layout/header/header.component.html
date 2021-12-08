@@ -1,101 +1,66 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light "
-        [ngClass]="{'bg-black-class': navBarMobileOpen,'nav-height-on-scroll': scrollDown,'bg-faded':commonSerice.navBgImg}">
-        <div class="container">
+<header class="mobile-view" [ngClass]="{'header-onScroll': scrollDown,'header-img-none':!commonSerice.navBgImg}">
 
-            <a class="navbar-brand clickable">
-                <img src="../assets/images/logo.png" alt="">
-            </a>
+    <div class="container">
 
-            <!-- <ul class="lng-drop-down-for-mobile" [ngClass]="{'display-inherit': navBarMobileOpen}">
-                <li class="nav-item dropdown clickable">
-                    <a class="nav-link disable-hover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="selected-flag" />
-                        En
-                        <i class="fa drop-icon">&#xf107;</i>
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item">French</a>
-                        <a class="dropdown-item">Urdu </a>
-                        <a class="dropdown-item">Hindi</a>
-                    </div>
-                </li>
-            </ul> -->
+        <a class="navbar-logo" routerLink="home">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
 
-            <button class="navbar-toggler" (click)="openNavBarForMobileView()" type="button" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i *ngIf="!navBarMobileOpen" class="fa fa-bars"></i>
-                <i *ngIf="navBarMobileOpen" class="fa fa-times"></i>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show': navBarMobileOpen}">
-                <ul class="navbar-nav">
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="home">Home</a>
-                    </li>
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="/services">Services
-                        </a></li>
-
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="/consulting">Consulting</a></li>
-
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="security">Security
-                        </a>
-                    </li>
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="development">Development</a></li>
-
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="solutions">Solutions
-                        </a></li>
-
-                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="cyber-Security">Cyber Security
-                        </a>
-                    </li>
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="data-protection">Data Protection
-                        </a>
-                    </li> -->
-
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="resources">Resources
-                        </a>
-                    </li>
-                    <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
-                            routerLink="blog">Blog
-                        </a>
-                    </li>
-
-                    <!-- <li (click)="navBarMobileOpen=false" class="nav-item dropdown clickable lng-drop-down-disable">
-                        <a class="nav-link  bottom-line-none" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <img class="selected-flag" />
-                            En
-                            <i class="fa drop-icon">&#xf107;</i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item">French</a>
-                            <a class="dropdown-item">Urdu </a>
-                            <a class="dropdown-item">Hindi</a>
-                        </div>
-                    </li> -->
-
-                    <li (click)="navBarMobileOpen=false" class="nav-item contact-btn-nav ">
-                        <a class="primary-btn white-text" routerLink="contact-us">
-                            Contact Us
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="burger-menue" (click)="navBarMobileOpen = !navBarMobileOpen">
+            <i *ngIf="!navBarMobileOpen" class="fa fa-bars fa-lg"></i>
+            <i *ngIf="navBarMobileOpen" class="fa fa-times fa-lg"></i>
         </div>
 
-    </nav>
-    <!--  -->
-    <div [ngClass]="{'breadcrum-on-scroll': scrollDown}">
+
+        <div class="navbar-menu-container">
+
+            <a class="hover-effect" routerLinkActive="active" routerLink="home">Home</a>
+
+            <a class="hover-effect" routerLinkActive="active" routerLink="consulting">Consulting</a>
+
+            <div class="nav-dropdown">
+                <a class="dropdown-toggle hover-effect" routerLinkActive="active" routerLink="services">Services
+                </a>
+                <div class="nav-dropdown-content">
+                    <a routerLinkActive="active" routerLink="security">Security
+                    </a>
+                    <a routerLinkActive="active" routerLink="development">Development
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a class="dropdown-toggle hover-effect" routerLinkActive="active" routerLink="solutions">Solutions
+                </a>
+                <div class="nav-dropdown-content">
+                    <a routerLinkActive="active" routerLink="data-protection"> ZCS
+                        Argon
+                    </a>
+                    <a routerLinkActive="active" routerLink="cyber-security">Cybersecurity
+                    </a>
+                </div>
+            </div>
+
+            <a routerLink="contact-us" class="contact-btn">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="nav-menu-4-mobile" *ngIf="navBarMobileOpen">
+
+        <a *ngFor="let page of pagesDetails" (click)="navBarMobileOpen=false" routerLinkActive="active"
+            routerLink="{{page?.routerLink}}">{{page?.name}}</a>
+
+        <a (click)="navBarMobileOpen=false" routerLink="contact-us" class="primary-btn">
+            Contact Us
+        </a>
+
+    </div>
+
+    <div class="nav-breadcrumb">
         <app-breadcrumb *ngIf="_router.url !== '/home'"> </app-breadcrumb>
     </div>
 
