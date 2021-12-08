@@ -1,4 +1,4 @@
-<header class="" [ngClass]="{'header-onScroll': scrollDown,'header-img-none':!commonSerice.navBgImg}">
+<header class="mobile-view" [ngClass]="{'header-onScroll': scrollDown,'header-img-none':!commonSerice.navBgImg}">
 
     <div class="container">
 
@@ -6,45 +6,75 @@
             <img src="../assets/images/logo.png" alt="">
         </a>
 
+        <div class="burger-menue" (click)="navBarMobileOpen = !navBarMobileOpen">
+            <i *ngIf="!navBarMobileOpen" class="fa fa-bars fa-lg"></i>
+            <i *ngIf="navBarMobileOpen" class="fa fa-times fa-lg"></i>
+            <!-- fa-lg fa-2x -->
+        </div>
+
+
         <div class="navbar-menu-container">
 
-            <a class="hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
-                routerLink="home">Home</a>
+            <a class="hover-effect" routerLinkActive="active" routerLink="home">Home</a>
 
-            <a class="hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
-                routerLink="consulting">Consulting</a>
+            <a class="hover-effect" routerLinkActive="active" routerLink="consulting">Consulting</a>
 
             <div class="nav-dropdown">
-                <a class="dropdown-toggle hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
-                    routerLink="services">Services
+                <a class="dropdown-toggle hover-effect" routerLinkActive="active" routerLink="services">Services
                 </a>
                 <div class="nav-dropdown-content">
-                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="security">Security
+                    <a routerLinkActive="active" routerLink="security">Security
                     </a>
-                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="development">Development
+                    <a routerLinkActive="active" routerLink="development">Development
                     </a>
                 </div>
             </div>
 
             <div class="nav-dropdown">
-                <a class="dropdown-toggle hover-effect" (click)="navBarMobileOpen=false" routerLinkActive="active"
-                    routerLink="solutions">Solutions
+                <a class="dropdown-toggle hover-effect" routerLinkActive="active" routerLink="solutions">Solutions
                 </a>
                 <div class="nav-dropdown-content">
-                    <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="data-protection"> ZCS
+                    <a routerLinkActive="active" routerLink="data-protection"> ZCS
                         Argon
                     </a>
-                    <a (click)="navBarMobileOpen=false" routerLinkActive="active"
-                        routerLink="cyber-security">Cybersecurity
+                    <a routerLinkActive="active" routerLink="cyber-security">Cybersecurity
                     </a>
                 </div>
             </div>
 
-            <a (click)="navBarMobileOpen=false" routerLink="contact-us" class="contact-btn">
+            <a routerLink="contact-us" class="contact-btn">
                 Contact Us
             </a>
         </div>
 
+    </div>
+
+    <div class="nav-menu-4-mobile" *ngIf="navBarMobileOpen">
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="home">Home</a>
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="consulting">Consulting</a>
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="services">Services
+        </a>
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="security">Security
+        </a>
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="development">Development
+        </a>
+
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="solutions">Solutions
+        </a>
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="data-protection"> ZCS
+            Argon
+        </a>
+        <a (click)="navBarMobileOpen=false" routerLinkActive="active" routerLink="cyber-security">Cybersecurity
+        </a>
+
+        <a (click)="navBarMobileOpen=false" routerLink="contact-us" class="primary-btn">
+            Contact Us
+        </a>
     </div>
 
     <div class="nav-breadcrumb">

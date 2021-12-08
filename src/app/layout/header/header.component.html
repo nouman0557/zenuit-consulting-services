@@ -27,6 +27,7 @@
                 <i *ngIf="!navBarMobileOpen" class="fa fa-bars"></i>
                 <i *ngIf="navBarMobileOpen" class="fa fa-times"></i>
             </button>
+
             <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show': navBarMobileOpen}">
                 <ul class="navbar-nav">
                     <li (click)="navBarMobileOpen=false" class="nav-item"><a routerLinkActive="active" class="nav-link"
