@@ -1,8 +1,9 @@
-<header [ngClass]="{'header-onScroll': scrollDown}">
+<header class="" [ngClass]="{'header-onScroll': scrollDown,'header-img-none':!commonSerice.navBgImg}">
+
     <div class="container">
 
         <a class="navbar-logo" routerLink="home">
-            <img src="../assets/images/logo.png" [ngClass]="{'logo-height-on-scroll': scrollDown}" alt="">
+            <img src="../assets/images/logo.png" alt="">
         </a>
 
         <div class="navbar-menu-container">
@@ -45,7 +46,9 @@
         </div>
 
     </div>
-    <div class="nav-breadcrumb" [ngClass]="{'breadcrum-on-scroll': scrollDown}">
+
+    <div class="nav-breadcrumb">
         <app-breadcrumb *ngIf="_router.url !== '/home'"> </app-breadcrumb>
     </div>
+
 </header>

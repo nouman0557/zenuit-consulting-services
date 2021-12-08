@@ -5,7 +5,6 @@ header {
     background-size: cover;
     background-position: contain;
     width: 100%;
-    height: auto;
     position: fixed;
     z-index: 1030;
     margin-top: -30px;
@@ -14,10 +13,20 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        -webkit-transition: all 0.3s ease-out 0.3s;
+        -moz-transition: all 0.3s ease-out 0.3s;
+        -ms-transition: all 0.3s ease-out 0.3s;
+        -o-transition: all 0.3s ease-out 0.3s;
+        transition: all 0.3s ease-out 0.3s;
         .navbar-logo {
             img {
                 width: 91px;
                 height: 91px;
+                -webkit-transition: all 0.3s ease-out 0.3s;
+                -moz-transition: all 0.3s ease-out 0.3s;
+                -ms-transition: all 0.3s ease-out 0.3s;
+                -o-transition: all 0.3s ease-out 0.3s;
+                transition: all 0.3s ease-out 0.3s;
             }
         }
         .navbar-burger-btn {
@@ -25,8 +34,8 @@ header {
         }
 
         .navbar-menu-container {
-            // width: 55%;
             a {
+                position: relative;
                 color: #ffffff;
                 font-size: 14px;
                 margin-right: 50px;
@@ -51,6 +60,9 @@ header {
                     text-align: center;
                     margin-right: 5px;
                 }
+                &.contact-btn:hover {
+                    background-color: #00a6d6;
+                }
             }
         }
         .btn {
@@ -61,6 +73,22 @@ header {
     }
 }
 
+.new-drop {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.new-drop:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
 .nav-dropdown {
     position: relative;
     display: inline-block;
@@ -69,13 +97,14 @@ header {
 .nav-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #070813;
-    // width: auto;
-    width: 124px;
+    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(3, 3, 3, 0.2);
     box-sizing: border-box;
     border-radius: 5px;
     margin: 8px 0px 0px -7px;
+    background-color: #070813;
+    width: 124px;
+    z-index: 1000000;
 }
 
 .nav-dropdown-content a {
@@ -92,11 +121,12 @@ header {
 }
 
 .nav-dropdown-content a:hover::after {
-    width: 100%;
+    width: 86%;
     transition: 0.5s;
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
+    transition: all 1s ease;
     display: block;
 }
 
@@ -112,38 +142,33 @@ header {
     // }
 }
 
-.hover-effect:hover {
-    font-size: 15px;
-    -webkit-text-stroke: 0.5px #ffffff;
-    -webkit-transition: all 0.6s ease-out 0.6s;
-    -moz-transition: all 0.6s ease-out 0.6s;
-    -ms-transition: all 0.6s ease-out 0.6s;
-    -o-transition: all 0.6s ease-out 0.6s;
-    transition: all 0.6s ease-out 0.6s;
-}
-
 .header-onScroll {
-    height: 75px;
-    margin-top: 0px;
-    padding-top: 0px;
     background-color: black;
+    .container {
+        height: 70px;
+        -webkit-transition: all 0.3s ease-out 0.3s;
+        -moz-transition: all 0.3s ease-out 0.3s;
+        -ms-transition: all 0.3s ease-out 0.3s;
+        -o-transition: all 0.3s ease-out 0.3s;
+        transition: all 0.3s ease-out 0.3s;
+        .navbar-logo {
+            img {
+                width: 70px !important;
+                height: 70px !important;
+                -webkit-transition: all 0.3s ease-out 0.3s;
+                -moz-transition: all 0.3s ease-out 0.3s;
+                -ms-transition: all 0.3s ease-out 0.3s;
+                -o-transition: all 0.3s ease-out 0.3s;
+                transition: all 0.3s ease-out 0.3s;
+            }
+        }
+    }
+    .nav-breadcrumb {
+        margin-top: -10px;
+        margin-bottom: 8px;
+    }
 }
 
-.logo-height-on-scroll {
-    width: 50px;
-    height: 56px;
-    -webkit-transition: all 0.6s ease-out 0.6s;
-    -moz-transition: all 0.6s ease-out 0.6s;
-    -ms-transition: all 0.6s ease-out 0.6s;
-    -o-transition: all 0.6s ease-out 0.6s;
-    transition: all 0.6s ease-out 0.6s;
-}
-
-.breadcrum-on-scroll {
-    display: none;
-    -webkit-transition: all 0.6s ease-out 0.6s;
-    -moz-transition: all 0.6s ease-out 0.6s;
-    -ms-transition: all 0.6s ease-out 0.6s;
-    -o-transition: all 0.6s ease-out 0.6s;
-    transition: all 0.6s ease-out 0.6s;
+.header-img-none {
+    background-image: none !important;
 }
